@@ -49,23 +49,23 @@
 \department{○○大学\\〇〇専攻}
 \id{XXXXXXX}
 \master{学士〇〇年}
-\author{sample name}
+\author{Sample Name}
 
 
 % ------- ここから本文内容 ------------
 \begin{document}
  
-% ------- 表紙 -------
+%%%%%%%%%%%%% 表紙 %%%%%%%%%%%%%%
 \maketitle
 \thispagestyle{empty} % ページ番号をなくす
 \newpage% 改ページ
 
-% ------- 目次 -------
+%%%%%%%%%%%%% 目次 %%%%%%%%%%%%%%
 \setcounter{tocdepth}{2}
 \tableofcontents
 \newpage
 
-% ------- 3p -------
+%%%%%%%%%%%%% 3p %%%%%%%%%%%%%
 \section{目的}
 これは実験レポート用のサンプルテキストです。基本的な使い方を参考にしながらレポートを書いていきましょう。
 
@@ -105,9 +105,9 @@
 
 \newpage% 改ページ
 
-% ------- 4p -------
-\section{手法}
+%%%%%%%%%%%% 4p %%%%%%%%%%%%%
 
+\section{手法}
 \subsection{実験装置}
 \subsection{実験方法}
 以下はsubsubsectionであり、subsectionの中をさらに小分けにすることができます。
@@ -117,9 +117,24 @@ $$
 \rho\left\{\frac{\partial v}{\partial t}+\nabla \cdot(\boldsymbol{v} \boldsymbol{v})\right\}=-\nabla p+\nabla \cdot(2 \mu \boldsymbol{D})
 $$
 
-\subsubsection{〇〇}
-
+\subsubsection{箇条書き}
+以下のようにすることによって箇条書きをすることができます。
+% ----- 箇条書き -----
+\begin{quote}
+ \begin{itemize}
+  \item test1
+  \item test2
+  \item test
+ \end{itemize}
+\end{quote}
+% ---------------------
 \section{結果}
+\subsection{ギリシャ文字}
+以下のようにギリシャ文字を出力させる
+$$A\rho\iota\sigma\tau{}o\tau\varepsilon\lambda\eta\varsigma$$
+
+
+
 
 \section{考察}
 
